@@ -55,7 +55,7 @@
                     <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
                 </section>
                 <footer class="container-fluid">
-                    <nav class="nav navbar-inverse navbar-fixed-bottom">
+                    <nav class="nav navbar-inverse navbar-static-top">
 
                             <h4 class="navbar-text">&copy; Copyright 2015</h4>
 
