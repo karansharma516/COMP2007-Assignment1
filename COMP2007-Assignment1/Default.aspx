@@ -135,7 +135,7 @@
 
                 <!-- Created the Compare validator to check whether Points Scored and Allowed are not same -->
                 <div class="alert-warning text-warning">
-                    <asp:CompareValidator ID="CompareValidator3" ControlToCompare="pointsAllowed2" ControlToValidate="pointScored2" Display="Dynamic" ErrorMessage="Points Scored and Points Allowed must be different." Operator="NotEqual" runat="server"></asp:CompareValidator>
+                    <asp:CompareValidator ID="CompareValidator3" ControlToCompare="pointsAllowed3" ControlToValidate="pointScored3" Display="Dynamic" ErrorMessage="Points Scored and Points Allowed must be different." Operator="NotEqual" runat="server"></asp:CompareValidator>
                 </div>
 
                 <!-- Created Point Allowed Label and TextBox with the required field and range validator  -->
@@ -181,7 +181,7 @@
 
                 <!-- Created the Compare validator to check whether Points Scored and Allowed are not same -->
                 <div class="alert-warning text-warning">
-                    <asp:CompareValidator ID="CompareValidator4" ControlToCompare="pointsAllowed2" ControlToValidate="pointScored2" Display="Dynamic" ErrorMessage="Points Scored and Points Allowed must be different." Operator="NotEqual" runat="server"></asp:CompareValidator>
+                    <asp:CompareValidator ID="CompareValidator4" ControlToCompare="pointsAllowed4" ControlToValidate="pointScored4" Display="Dynamic" ErrorMessage="Points Scored and Points Allowed must be different." Operator="NotEqual" runat="server"></asp:CompareValidator>
                 </div>
 
                 <!-- Created Point Allowed Label and TextBox with the required field and range validator  -->
