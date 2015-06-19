@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\back.jpg" />
     <Content Include="MasterPages\FrontEnd.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

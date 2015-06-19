@@ -11,11 +11,15 @@ namespace COMP2007_Assignment1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack)
+            {
+                summary.Visible = true;
+            }
         }
 
         protected void SummaryButton_Click(object sender, EventArgs e)
         {
+            // variables 
             int totalWon = 0;
             int totalLoss = 0;
             // calculating the number of won and loss for game 1
@@ -91,6 +95,39 @@ namespace COMP2007_Assignment1
             //Display Average Spectators.
             avgSpecLabel.Text = averageSpectator.ToString();
 
+
+        }
+
+        protected void ClearButton_Click(object sender, EventArgs e)
+        {
+            // clearing the text of the all the text boxes when clear button clicks
+            pointScored1.Text = " ";
+            pointsAllowed1.Text = " ";
+            pointsAllowed2.Text = " ";
+            pointsAllowed3.Text = " ";
+            pointsAllowed4.Text = " ";
+            pointScored2.Text = " ";
+            pointScored3.Text = " ";
+            pointScored4.Text = " ";
+            sptTextbox1.Text = " ";
+            sptTextbox2.Text = " ";
+            sptTextbox3.Text = " ";
+            sptTextbox4.Text = " ";
+           
+            //Clearing all the values in the summary
+            labelWon.Text = " ";
+            labelLoss.Text = " ";
+            labelWinning.Text = " ";
+            pointsLabel.Text = " ";
+            pointsAllowed.Text = " ";
+            diffLabel.Text = " ";
+            specLabel.Text = " ";
+            avgSpecLabel.Text = " ";
+
+            RadioButtonList1.ClearSelection();
+            RadioButtonList2.ClearSelection();
+            RadioButtonList3.ClearSelection();
+            RadioButtonList4.ClearSelection();
 
         }
     }
